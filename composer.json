@@ -1,0 +1,33 @@
+{
+    "name": "laravel-admin-ext/php-editor",
+    "description": "PHP editor extension for laravel-admin based on code-mirror",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "code mirror", "php", "editor"],
+    "homepage": "https://github.com/laravel-admin-ext/php-editor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "song",
+            "email": "zosong@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "jxlwqq/code-mirror": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\PHPEditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\PHPEditor\\PHPEditorServiceProvider"
+            ]
+        }
+    }
+}
