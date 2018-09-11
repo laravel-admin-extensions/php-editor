@@ -3,6 +3,7 @@
 namespace Encore\PHPEditor;
 
 use Encore\Admin\Form\Field;
+use Jxlwqq\CodeMirror\CodeMirror;
 
 class Editor extends Field
 {
@@ -15,21 +16,21 @@ class Editor extends Field
      * {@inheritdoc}
      */
     protected static $css = [
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/lib/codemirror.css',
+        CodeMirror::ASSETS_PATH.'lib/codemirror.css',
     ];
 
     /**
      * {@inheritdoc}
      */
     protected static $js = [
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/lib/codemirror.js',
+        CodeMirror::ASSETS_PATH.'lib/codemirror.js',
         // x-httpd-php mode
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/htmlmixed/htmlmixed.js',
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/xml/xml.js',
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/javascript/javascript.js',
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/css/css.js',
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/clike/clike.js',
-        'vendor/laravel-admin-ext/code-mirror/codemirror-5.40.0/mode/php/php.js',
+        CodeMirror::ASSETS_PATH.'mode/htmlmixed/htmlmixed.js',
+        CodeMirror::ASSETS_PATH.'mode/xml/xml.js',
+        CodeMirror::ASSETS_PATH.'mode/javascript/javascript.js',
+        CodeMirror::ASSETS_PATH.'mode/css/css.js',
+        CodeMirror::ASSETS_PATH.'mode/clike/clike.js',
+        CodeMirror::ASSETS_PATH.'mode/php/php.js',
     ];
 
     /**
