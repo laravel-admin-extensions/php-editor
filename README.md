@@ -11,19 +11,19 @@ composer require laravel-admin-ext/php-editor
 php artisan vendor:publish --tag=laravel-admin-code-mirror
 ```
 
-## 配置
+## Configuration
 
-在`config/admin.php`文件的`extensions`，加上属于这个扩展的一些配置
+In the `extensions` section of the `config/admin.php` file, add some configuration that belongs to this extension.
 ```php
 
     'extensions' => [
 
         'php-editor' => [
         
-            // 如果要关掉这个扩展，设置为false
+            //Set to false if you want to disable this extension
             'enable' => true,
             
-            // 编辑器的配置
+            // Editor configuration
             'config' => [
                 
             ]
@@ -32,23 +32,25 @@ php artisan vendor:publish --tag=laravel-admin-code-mirror
 
 ```
 
-更多配置可以到[CodeMirror文档](https://codemirror.net/)找到
+The configuration of the editor can be found in  [CodeMirror Documentation](https://codemirror.net/)
 
-## 使用
+## Usage 
 
-在form表单中使用它：
+Use it in the form:
 ```php
 $form->php('code');
 ```
 
-设置高度
+Set height
 ```php
 $form->php('code')->height(500);
 ```
 
-## 支持
+## Donate
 
-如果觉得这个项目帮你节约了时间，不妨支持一下;)
+> Help keeping the project development going, by donating a little. Thanks in advance.
+
+[![PayPal Me](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/zousong)
 
 ![-1](https://cloud.githubusercontent.com/assets/1479100/23287423/45c68202-fa78-11e6-8125-3e365101a313.jpg)
 
